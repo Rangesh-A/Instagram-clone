@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-Instagram</title>
+    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="database.js">
+    <link rel="icon" href="src/icons8-instagram-48.png" type="image/x-icon">
+
+    <!--firebase-->
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="page">
+            <div class="icon">
+                <img src="src/insta.png" alt="**">
+            </div>
+            <div class="quotes">
+                <p>Sign up to see photos and videos</p>
+                <p>from the friends.</p>
+            </div>
+            <div class="btn">
+                <button>Log in with Facebook</button>
+            </div>
+            <div class="divider">
+                <div>
+                    <p>----------</p>
+                </div>
+                <div>
+                    <p>or</p>
+                </div>
+                <div>
+                    <p>----------</p>
+                </div>
+            </div>
+            <div class="input">
+                <form >
+                    <input type="text" name="mobile" id="mobile" placeholder="Mobile Number or Email">
+                    <input type="text" name="fullname" id="fullname" placeholder="Full Name">
+                    <input type="text" name="Username" id="username" placeholder="Username">
+                    <input type="text" name="Password" id="password" placeholder="Password">
+                </form>
+            </div>
+            <div class="contents">
+                <p style="color:grey;">People who use our service may have uploaded your contact information to Instagram.<b> Learn More</b></p>
+            </div>
+            <br>
+            <div class="contents">
+                <p style="color:grey;">By signing up, you agree to our <b>Terms </b>, <b>Policy</b>  and <b>Cookies</b> Policy .</p>
+            </div>
+            <br>
+            <div class="btn">
+                <button  id="sign in" onclick ="register()" style="margin-bottom:30px; cursor: pointer;">Sign in</button>
+            </div>
+        </div>
+        <div class="already">
+            <div>
+                <p>Have an account?</p>
+                <a href="#" style="margin-left:10px">Log in</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
